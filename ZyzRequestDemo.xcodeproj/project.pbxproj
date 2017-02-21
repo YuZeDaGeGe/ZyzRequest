@@ -1,0 +1,735 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18F004B71E5BC8A9003E9E08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F004B61E5BC8A9003E9E08 /* main.m */; };
+		18F004BA1E5BC8A9003E9E08 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F004B91E5BC8A9003E9E08 /* AppDelegate.m */; };
+		18F004BD1E5BC8A9003E9E08 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F004BC1E5BC8A9003E9E08 /* ViewController.m */; };
+		18F004C01E5BC8A9003E9E08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F004BE1E5BC8A9003E9E08 /* Main.storyboard */; };
+		18F004C21E5BC8A9003E9E08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F004C11E5BC8A9003E9E08 /* Assets.xcassets */; };
+		18F004C51E5BC8A9003E9E08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F004C31E5BC8A9003E9E08 /* LaunchScreen.storyboard */; };
+		18F004D01E5BC8A9003E9E08 /* ZyzRequestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F004CF1E5BC8A9003E9E08 /* ZyzRequestDemoTests.m */; };
+		18F004DB1E5BC8A9003E9E08 /* ZyzRequestDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F004DA1E5BC8A9003E9E08 /* ZyzRequestDemoUITests.m */; };
+		18F004EB1E5BC8BD003E9E08 /* ZyzRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F004EA1E5BC8BD003E9E08 /* ZyzRequest.m */; };
+		5E6E753866A7652BC77AAEB5 /* libPods-ZyzRequestDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCFDC23B584FBAE44287DB08 /* libPods-ZyzRequestDemoTests.a */; };
+		5EDD7377A7E9C3FE48AC1EB1 /* libPods-ZyzRequestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D02BA97D7844EF9EEC85070 /* libPods-ZyzRequestDemo.a */; };
+		D64F87FAE2750FF1E2218B21 /* libPods-ZyzRequestDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 609878E5FA78A61EB1A18680 /* libPods-ZyzRequestDemoUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18F004CC1E5BC8A9003E9E08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18F004AA1E5BC8A9003E9E08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18F004B11E5BC8A9003E9E08;
+			remoteInfo = ZyzRequestDemo;
+		};
+		18F004D71E5BC8A9003E9E08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18F004AA1E5BC8A9003E9E08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18F004B11E5BC8A9003E9E08;
+			remoteInfo = ZyzRequestDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D02BA97D7844EF9EEC85070 /* libPods-ZyzRequestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZyzRequestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F004B21E5BC8A9003E9E08 /* ZyzRequestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZyzRequestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F004B61E5BC8A9003E9E08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18F004B81E5BC8A9003E9E08 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18F004B91E5BC8A9003E9E08 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18F004BB1E5BC8A9003E9E08 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18F004BC1E5BC8A9003E9E08 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18F004BF1E5BC8A9003E9E08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18F004C11E5BC8A9003E9E08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18F004C41E5BC8A9003E9E08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18F004C61E5BC8A9003E9E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F004CB1E5BC8A9003E9E08 /* ZyzRequestDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZyzRequestDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F004CF1E5BC8A9003E9E08 /* ZyzRequestDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZyzRequestDemoTests.m; sourceTree = "<group>"; };
+		18F004D11E5BC8A9003E9E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F004D61E5BC8A9003E9E08 /* ZyzRequestDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZyzRequestDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F004DA1E5BC8A9003E9E08 /* ZyzRequestDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZyzRequestDemoUITests.m; sourceTree = "<group>"; };
+		18F004DC1E5BC8A9003E9E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F004E91E5BC8BD003E9E08 /* ZyzRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZyzRequest.h; sourceTree = "<group>"; };
+		18F004EA1E5BC8BD003E9E08 /* ZyzRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZyzRequest.m; sourceTree = "<group>"; };
+		20E5999D61A7BE6A18A43AD7 /* Pods-ZyzRequestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZyzRequestDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZyzRequestDemo/Pods-ZyzRequestDemo.release.xcconfig"; sourceTree = "<group>"; };
+		3BF818A2E629B1EC8F5AD0C0 /* Pods-ZyzRequestDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZyzRequestDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZyzRequestDemoTests/Pods-ZyzRequestDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		555D7F227CE46163C827C045 /* Pods-ZyzRequestDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZyzRequestDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZyzRequestDemoUITests/Pods-ZyzRequestDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		609878E5FA78A61EB1A18680 /* libPods-ZyzRequestDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZyzRequestDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E860226643DC96098F3361 /* Pods-ZyzRequestDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZyzRequestDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZyzRequestDemoTests/Pods-ZyzRequestDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		B97F3D2888555708DF0F36EB /* Pods-ZyzRequestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZyzRequestDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZyzRequestDemo/Pods-ZyzRequestDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		BCFDC23B584FBAE44287DB08 /* libPods-ZyzRequestDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZyzRequestDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED2EED44CB655282843FB276 /* Pods-ZyzRequestDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZyzRequestDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZyzRequestDemoUITests/Pods-ZyzRequestDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18F004AF1E5BC8A9003E9E08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EDD7377A7E9C3FE48AC1EB1 /* libPods-ZyzRequestDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F004C81E5BC8A9003E9E08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E6E753866A7652BC77AAEB5 /* libPods-ZyzRequestDemoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F004D31E5BC8A9003E9E08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D64F87FAE2750FF1E2218B21 /* libPods-ZyzRequestDemoUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18F004A91E5BC8A9003E9E08 = {
+			isa = PBXGroup;
+			children = (
+				18F004E81E5BC8BD003E9E08 /* ZyzRequest */,
+				18F004B41E5BC8A9003E9E08 /* ZyzRequestDemo */,
+				18F004CE1E5BC8A9003E9E08 /* ZyzRequestDemoTests */,
+				18F004D91E5BC8A9003E9E08 /* ZyzRequestDemoUITests */,
+				18F004B31E5BC8A9003E9E08 /* Products */,
+				487BFD0D4B02BE418057C12B /* Pods */,
+				77D31BE6F123020879210580 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18F004B31E5BC8A9003E9E08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18F004B21E5BC8A9003E9E08 /* ZyzRequestDemo.app */,
+				18F004CB1E5BC8A9003E9E08 /* ZyzRequestDemoTests.xctest */,
+				18F004D61E5BC8A9003E9E08 /* ZyzRequestDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18F004B41E5BC8A9003E9E08 /* ZyzRequestDemo */ = {
+			isa = PBXGroup;
+			children = (
+				18F004B81E5BC8A9003E9E08 /* AppDelegate.h */,
+				18F004B91E5BC8A9003E9E08 /* AppDelegate.m */,
+				18F004BB1E5BC8A9003E9E08 /* ViewController.h */,
+				18F004BC1E5BC8A9003E9E08 /* ViewController.m */,
+				18F004BE1E5BC8A9003E9E08 /* Main.storyboard */,
+				18F004C11E5BC8A9003E9E08 /* Assets.xcassets */,
+				18F004C31E5BC8A9003E9E08 /* LaunchScreen.storyboard */,
+				18F004C61E5BC8A9003E9E08 /* Info.plist */,
+				18F004B51E5BC8A9003E9E08 /* Supporting Files */,
+			);
+			path = ZyzRequestDemo;
+			sourceTree = "<group>";
+		};
+		18F004B51E5BC8A9003E9E08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18F004B61E5BC8A9003E9E08 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18F004CE1E5BC8A9003E9E08 /* ZyzRequestDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				18F004CF1E5BC8A9003E9E08 /* ZyzRequestDemoTests.m */,
+				18F004D11E5BC8A9003E9E08 /* Info.plist */,
+			);
+			path = ZyzRequestDemoTests;
+			sourceTree = "<group>";
+		};
+		18F004D91E5BC8A9003E9E08 /* ZyzRequestDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18F004DA1E5BC8A9003E9E08 /* ZyzRequestDemoUITests.m */,
+				18F004DC1E5BC8A9003E9E08 /* Info.plist */,
+			);
+			path = ZyzRequestDemoUITests;
+			sourceTree = "<group>";
+		};
+		18F004E81E5BC8BD003E9E08 /* ZyzRequest */ = {
+			isa = PBXGroup;
+			children = (
+				18F004E91E5BC8BD003E9E08 /* ZyzRequest.h */,
+				18F004EA1E5BC8BD003E9E08 /* ZyzRequest.m */,
+			);
+			path = ZyzRequest;
+			sourceTree = "<group>";
+		};
+		487BFD0D4B02BE418057C12B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B97F3D2888555708DF0F36EB /* Pods-ZyzRequestDemo.debug.xcconfig */,
+				20E5999D61A7BE6A18A43AD7 /* Pods-ZyzRequestDemo.release.xcconfig */,
+				3BF818A2E629B1EC8F5AD0C0 /* Pods-ZyzRequestDemoTests.debug.xcconfig */,
+				A5E860226643DC96098F3361 /* Pods-ZyzRequestDemoTests.release.xcconfig */,
+				ED2EED44CB655282843FB276 /* Pods-ZyzRequestDemoUITests.debug.xcconfig */,
+				555D7F227CE46163C827C045 /* Pods-ZyzRequestDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		77D31BE6F123020879210580 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D02BA97D7844EF9EEC85070 /* libPods-ZyzRequestDemo.a */,
+				BCFDC23B584FBAE44287DB08 /* libPods-ZyzRequestDemoTests.a */,
+				609878E5FA78A61EB1A18680 /* libPods-ZyzRequestDemoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18F004B11E5BC8A9003E9E08 /* ZyzRequestDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F004DF1E5BC8A9003E9E08 /* Build configuration list for PBXNativeTarget "ZyzRequestDemo" */;
+			buildPhases = (
+				D67CC1E969F9B190340A849B /* [CP] Check Pods Manifest.lock */,
+				18F004AE1E5BC8A9003E9E08 /* Sources */,
+				18F004AF1E5BC8A9003E9E08 /* Frameworks */,
+				18F004B01E5BC8A9003E9E08 /* Resources */,
+				5625A9028536FBF4338C9ECA /* [CP] Embed Pods Frameworks */,
+				3F2F3FC02D083CA1F33BD805 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZyzRequestDemo;
+			productName = ZyzRequestDemo;
+			productReference = 18F004B21E5BC8A9003E9E08 /* ZyzRequestDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18F004CA1E5BC8A9003E9E08 /* ZyzRequestDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F004E21E5BC8A9003E9E08 /* Build configuration list for PBXNativeTarget "ZyzRequestDemoTests" */;
+			buildPhases = (
+				8B3973BABA2A3735AE6FFDEF /* [CP] Check Pods Manifest.lock */,
+				18F004C71E5BC8A9003E9E08 /* Sources */,
+				18F004C81E5BC8A9003E9E08 /* Frameworks */,
+				18F004C91E5BC8A9003E9E08 /* Resources */,
+				33DA930218647596A6FF3AFE /* [CP] Embed Pods Frameworks */,
+				63E75C01A42C3EB74C0F60FA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18F004CD1E5BC8A9003E9E08 /* PBXTargetDependency */,
+			);
+			name = ZyzRequestDemoTests;
+			productName = ZyzRequestDemoTests;
+			productReference = 18F004CB1E5BC8A9003E9E08 /* ZyzRequestDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18F004D51E5BC8A9003E9E08 /* ZyzRequestDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F004E51E5BC8A9003E9E08 /* Build configuration list for PBXNativeTarget "ZyzRequestDemoUITests" */;
+			buildPhases = (
+				EF8AA8DE82DC741149711865 /* [CP] Check Pods Manifest.lock */,
+				18F004D21E5BC8A9003E9E08 /* Sources */,
+				18F004D31E5BC8A9003E9E08 /* Frameworks */,
+				18F004D41E5BC8A9003E9E08 /* Resources */,
+				88EFBF702A21B0D4CA762E40 /* [CP] Embed Pods Frameworks */,
+				D228764B74558376B5B2964A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18F004D81E5BC8A9003E9E08 /* PBXTargetDependency */,
+			);
+			name = ZyzRequestDemoUITests;
+			productName = ZyzRequestDemoUITests;
+			productReference = 18F004D61E5BC8A9003E9E08 /* ZyzRequestDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18F004AA1E5BC8A9003E9E08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "张玉泽";
+				TargetAttributes = {
+					18F004B11E5BC8A9003E9E08 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					18F004CA1E5BC8A9003E9E08 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18F004B11E5BC8A9003E9E08;
+					};
+					18F004D51E5BC8A9003E9E08 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 18F004B11E5BC8A9003E9E08;
+					};
+				};
+			};
+			buildConfigurationList = 18F004AD1E5BC8A9003E9E08 /* Build configuration list for PBXProject "ZyzRequestDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18F004A91E5BC8A9003E9E08;
+			productRefGroup = 18F004B31E5BC8A9003E9E08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18F004B11E5BC8A9003E9E08 /* ZyzRequestDemo */,
+				18F004CA1E5BC8A9003E9E08 /* ZyzRequestDemoTests */,
+				18F004D51E5BC8A9003E9E08 /* ZyzRequestDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18F004B01E5BC8A9003E9E08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F004C51E5BC8A9003E9E08 /* LaunchScreen.storyboard in Resources */,
+				18F004C21E5BC8A9003E9E08 /* Assets.xcassets in Resources */,
+				18F004C01E5BC8A9003E9E08 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F004C91E5BC8A9003E9E08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F004D41E5BC8A9003E9E08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33DA930218647596A6FF3AFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZyzRequestDemoTests/Pods-ZyzRequestDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F2F3FC02D083CA1F33BD805 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZyzRequestDemo/Pods-ZyzRequestDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5625A9028536FBF4338C9ECA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZyzRequestDemo/Pods-ZyzRequestDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63E75C01A42C3EB74C0F60FA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZyzRequestDemoTests/Pods-ZyzRequestDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88EFBF702A21B0D4CA762E40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZyzRequestDemoUITests/Pods-ZyzRequestDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B3973BABA2A3735AE6FFDEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D228764B74558376B5B2964A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZyzRequestDemoUITests/Pods-ZyzRequestDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D67CC1E969F9B190340A849B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF8AA8DE82DC741149711865 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18F004AE1E5BC8A9003E9E08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F004BD1E5BC8A9003E9E08 /* ViewController.m in Sources */,
+				18F004EB1E5BC8BD003E9E08 /* ZyzRequest.m in Sources */,
+				18F004BA1E5BC8A9003E9E08 /* AppDelegate.m in Sources */,
+				18F004B71E5BC8A9003E9E08 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F004C71E5BC8A9003E9E08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F004D01E5BC8A9003E9E08 /* ZyzRequestDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F004D21E5BC8A9003E9E08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F004DB1E5BC8A9003E9E08 /* ZyzRequestDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18F004CD1E5BC8A9003E9E08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18F004B11E5BC8A9003E9E08 /* ZyzRequestDemo */;
+			targetProxy = 18F004CC1E5BC8A9003E9E08 /* PBXContainerItemProxy */;
+		};
+		18F004D81E5BC8A9003E9E08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18F004B11E5BC8A9003E9E08 /* ZyzRequestDemo */;
+			targetProxy = 18F004D71E5BC8A9003E9E08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18F004BE1E5BC8A9003E9E08 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18F004BF1E5BC8A9003E9E08 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18F004C31E5BC8A9003E9E08 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18F004C41E5BC8A9003E9E08 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18F004DD1E5BC8A9003E9E08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18F004DE1E5BC8A9003E9E08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18F004E01E5BC8A9003E9E08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B97F3D2888555708DF0F36EB /* Pods-ZyzRequestDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZyzRequestDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "---.ZyzRequestDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18F004E11E5BC8A9003E9E08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20E5999D61A7BE6A18A43AD7 /* Pods-ZyzRequestDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZyzRequestDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "---.ZyzRequestDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		18F004E31E5BC8A9003E9E08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BF818A2E629B1EC8F5AD0C0 /* Pods-ZyzRequestDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZyzRequestDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "---.ZyzRequestDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZyzRequestDemo.app/ZyzRequestDemo";
+			};
+			name = Debug;
+		};
+		18F004E41E5BC8A9003E9E08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5E860226643DC96098F3361 /* Pods-ZyzRequestDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZyzRequestDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "---.ZyzRequestDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZyzRequestDemo.app/ZyzRequestDemo";
+			};
+			name = Release;
+		};
+		18F004E61E5BC8A9003E9E08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED2EED44CB655282843FB276 /* Pods-ZyzRequestDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = ZyzRequestDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "---.ZyzRequestDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZyzRequestDemo;
+			};
+			name = Debug;
+		};
+		18F004E71E5BC8A9003E9E08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 555D7F227CE46163C827C045 /* Pods-ZyzRequestDemoUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = ZyzRequestDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "---.ZyzRequestDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZyzRequestDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18F004AD1E5BC8A9003E9E08 /* Build configuration list for PBXProject "ZyzRequestDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F004DD1E5BC8A9003E9E08 /* Debug */,
+				18F004DE1E5BC8A9003E9E08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18F004DF1E5BC8A9003E9E08 /* Build configuration list for PBXNativeTarget "ZyzRequestDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F004E01E5BC8A9003E9E08 /* Debug */,
+				18F004E11E5BC8A9003E9E08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18F004E21E5BC8A9003E9E08 /* Build configuration list for PBXNativeTarget "ZyzRequestDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F004E31E5BC8A9003E9E08 /* Debug */,
+				18F004E41E5BC8A9003E9E08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18F004E51E5BC8A9003E9E08 /* Build configuration list for PBXNativeTarget "ZyzRequestDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F004E61E5BC8A9003E9E08 /* Debug */,
+				18F004E71E5BC8A9003E9E08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18F004AA1E5BC8A9003E9E08 /* Project object */;
+}
