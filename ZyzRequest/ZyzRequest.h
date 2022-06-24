@@ -47,7 +47,7 @@ typedef void(^ZyzResultErrorHandle)(NSURLSessionDataTask *task, NSError *error, 
  *
  *  @since  1.0.8
  */
-+ (void)zyzPOST:(NSString *)URLString parameters:(NSDictionary *)parameters isEncrypt:(BOOL)encrypt zyzResultSuccess:(ZyzResultSuccessHandle)zyzResultSuccess zyzResultError:(ZyzResultErrorHandle)zyzResultError;
++ (void)zyzPOST:(NSString *)URLString parameters:(NSDictionary *__nullable)parameters isEncrypt:(BOOL)encrypt zyzResultSuccess:(ZyzResultSuccessHandle)zyzResultSuccess zyzResultError:(ZyzResultErrorHandle)zyzResultError;
 
 
 /*!
@@ -133,6 +133,26 @@ typedef void(^ZyzResultErrorHandle)(NSURLSessionDataTask *task, NSError *error, 
  *  @since  1.0.7
  */
 + (void) zyzRequestAFNetworkingTest:(NSString *)URLString parameters:(NSDictionary *)parameters isEncrypt:(BOOL)encrypt;
+
+#pragma mark - ZyzRequest Tool Methods
+/*!
+ *  @author zyz_zhang, 2016-01-05 22:03:11
+ *
+ *  @brief  zyzGET                         ( 请求网络获取数据 <GET> )
+ *
+ *  @param  URLString                       请求的 url
+ *
+ *  @param  parameters                      请求 需要传递的参数
+ *
+ *  @param  encrypt                         请求 是否 对参数加密 (YES 加密 / NO 不加密)
+ *
+ *  @param  zyzResultSuccess                请求获取数据成功
+ *
+ *  @param  zyzResultError                  请求获取数据失败
+ *
+ *  @since  1.0.8
+ */
++ (void)zyzGET:(NSString *)URLString parameters:(NSDictionary *__nullable)parameters isEncrypt:(BOOL)encrypt zyzResultSuccess:(ZyzResultSuccessHandle)zyzResultSuccess zyzResultError:(ZyzResultErrorHandle)zyzResultError;
 @end
 NS_ASSUME_NONNULL_END
 

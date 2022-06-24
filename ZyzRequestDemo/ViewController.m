@@ -13,7 +13,7 @@
 @property (nonatomic, weak) IBOutlet UILabel *resultMessageLabelView;
 @end
 
-static NSString * const urlString2 = @"https://www.baidu.com";
+static NSString * const urlString2 = @"https://commtest.shuhaixinxi.com/community/appVersion/vno";
 
 @implementation ViewController
 
@@ -26,7 +26,8 @@ static NSString * const urlString2 = @"https://www.baidu.com";
 - (void)ZyzRequestGetData:(NSString *)urlString  {
     
     NSDictionary *dictionary = @{
-                                 @"app_key" : urlString,
+//                                 @"app_key" : urlString,
+                                 @"identifier"       :   @"1"
                                  };
     [ZyzRequest zyzPOST:urlString parameters:dictionary isEncrypt:NO zyzResultSuccess:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull resultObject) {
         self.resultMessageLabelView.text = @"请求成功...";

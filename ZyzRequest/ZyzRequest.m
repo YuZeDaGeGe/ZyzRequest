@@ -61,13 +61,10 @@
     [zyzRequest settingNetworkPicture:YES];
     
     // 发起请求
-    [zyzRequest.zyzSessionManager POST:URLString parameters:dictionary progress:^(NSProgress * _Nonnull uploadProgress) {
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [zyzRequest.zyzSessionManager POST:URLString parameters:dictionary headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         resultObject = [zyzRequest requestDispose:responseObject isBase64:encrypt];
         zyzResultSuccess(task, resultObject);
         [zyzRequest settingNetworkPicture:NO];
-        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSString *errorInfo = error == nil ? nil : [NSString stringWithFormat:@"错误代码%ld \n 错误信息%@", (long)error.code, error.localizedDescription];
         zyzResultError(task, error, errorInfo);
@@ -101,7 +98,6 @@
     
     // 初始化自定义网络请求类
     ZyzRequest *zyzRequest               = [ZyzRequest shareInstance];
-    
     // 字典加密
     NSDictionary         *dictionary     = encrypt ? [zyzRequest encryptedParamsWithDict:parameters] : parameters;
     // 返回结果集
@@ -111,7 +107,7 @@
     [zyzRequest settingNetworkPicture:YES];
     
     // 发起请求
-    [zyzRequest.zyzSessionManager POST:URLString parameters:dictionary constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+    [zyzRequest.zyzSessionManager POST:URLString parameters:dictionary headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         [formData appendPartWithFileData:fileData name:fileName fileName:@"picture.png" mimeType:@"image/png"];
     } progress:^(NSProgress * _Nonnull uploadProgress) {
         
@@ -124,6 +120,7 @@
         zyzResultError(task, error, errorInfo);
         [zyzRequest settingNetworkPicture:NO];
     }];
+    
 }
 
 /*!
@@ -161,13 +158,11 @@
     [zyzRequest settingNetworkPicture:YES];
     
     // 发起请求
-    [zyzRequest.zyzSessionManager POST:URLString parameters:dictionary constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-        
+    [zyzRequest.zyzSessionManager POST:URLString parameters:dictionary headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         for (int i=0; i<fileDatas.count; i++) {
             NSString *imageName = [NSString stringWithFormat:@"%@[%i]", fileName, i];
             [formData appendPartWithFileData:fileDatas[i] name:imageName fileName:imageName mimeType:@"image/png"];
         }
-        
     } progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -217,7 +212,7 @@
     [zyzRequest settingNetworkPicture:YES];
     
     // 发起请求
-    [zyzRequest.zyzSessionManager POST:URLString parameters:dictionary constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+    [zyzRequest.zyzSessionManager POST:URLString parameters:dictionary headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         for (int i=0; i<fileDatas.count; i++) {
             [formData appendPartWithFileData:fileDatas[i] name:fileNames[i] fileName:fileNames[i] mimeType:@"image/png"];
         }
@@ -233,6 +228,30 @@
         [zyzRequest settingNetworkPicture:NO];
     }];
     
+}
+
++ (void)zyzGET:(NSString *)URLString parameters:(NSDictionary *)parameters isEncrypt:(BOOL)encrypt zyzResultSuccess:(ZyzResultSuccessHandle)zyzResultSuccess zyzResultError:(ZyzResultErrorHandle)zyzResultError{
+    // 初始化自定义网络请求类
+    ZyzRequest *zyzRequest               = [ZyzRequest shareInstance];
+    
+    // 字典加密
+    NSDictionary         *dictionary     = encrypt ? [zyzRequest encryptedParamsWithDict:parameters] : parameters;
+    // 返回结果集
+    __block NSDictionary *resultObject   = [NSDictionary dictionary];
+    
+    // 显示 状态栏 请求数据的菊花
+    [zyzRequest settingNetworkPicture:YES];
+    
+    // 发起请求
+    [zyzRequest.zyzSessionManager GET:URLString parameters:dictionary headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        resultObject = [zyzRequest requestDispose:responseObject isBase64:encrypt];
+        zyzResultSuccess(task, resultObject);
+        [zyzRequest settingNetworkPicture:NO];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSString *errorInfo = error == nil ? nil : [NSString stringWithFormat:@"错误代码%ld \n 错误信息%@", (long)error.code, error.localizedDescription];
+        zyzResultError(task, error, errorInfo);
+        [zyzRequest settingNetworkPicture:NO];
+    }];
 }
 
 /*!
@@ -338,8 +357,6 @@
  *
  *  @brief  againcStr   ( 第二次取前十位进行加密 )
  *
- *  @param  inputStr
- *
  *  @return NSString
  *
  *  @since  1.0.7
@@ -416,6 +433,8 @@
         
         _zyzSessionManager = [AFHTTPSessionManager manager];
         _zyzSessionManager.responseSerializer  = [AFHTTPResponseSerializer serializer];
+        //申明请求的数据是json类型
+        _zyzSessionManager.requestSerializer = [AFJSONRequestSerializer serializer];
         [_zyzSessionManager.responseSerializer setAcceptableContentTypes:[NSSet setWithObjects:@"application/json", @"text/json", @"text/html", @"text/css", @"text/javascript", nil]];
     }
     return _zyzSessionManager;
